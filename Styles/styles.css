@@ -1,0 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Bebas Neue', 'Roboto', sans-serif;
+  background-color: #191919;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+/*# sourceMappingURL=styles.css.map */
