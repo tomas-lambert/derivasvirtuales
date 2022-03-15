@@ -1,0 +1,930 @@
+body {
+  font-family: 'Bebas Neue', 'Roboto', sans-serif;
+  background-color: rgb(25, 25, 25);
+  margin: 0;
+  padding: 0;
+  cursor: grab;
+}
+
+.titulo {
+  position: fixed;
+  margin: 30px;
+  color: #f1f1f1;
+  display: flex;
+  letter-spacing: 1.5px;
+  z-index: 2;
+}
+
+.button-menu {
+  font-size: 25px;
+  background-color: transparent;
+  margin: 0 9px 0 0;
+  padding: 0;
+  display: block;
+  height: fit-content;
+  color: #f1f1f1;
+}
+
+.titulo-menu {
+  width: 56%;
+}
+
+.subtitulo-menu {
+  font-size: 18px;
+  margin: 0;
+}
+
+.titulo-museos {
+  font-family: 'Bebas Neue';
+  font-size: 30px;
+  color: #4BCFAB;
+}
+
+button {
+  transition: display 0.5s ease;
+  margin: 20px auto;
+  color: rgb(15, 14, 15);
+  border: 0;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+span {
+  color: black;
+}
+
+#menu-container {
+  width: 400px;
+  height: 100%;
+  background-color: #333233;
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+}
+
+.close-button {
+  transition: display 0.5s ease;
+  display: none;
+}
+
+.header-menu {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.header-menu img {
+  width: 25px;
+  margin: 37px 23px;
+}
+
+.body {
+  margin-top: 75px;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  overflow-y: scroll;
+  max-height: calc(100vh - 200px);
+  height: 100%;
+}
+
+.body::-webkit-scrollbar {
+  width: 0;
+}
+
+@media(max-width: 1440px) {
+  .body {
+    max-height: 390px;
+  }
+}
+
+.open {
+  transition: left 0.5s ease;
+  left: 0;
+}
+
+.close {
+  transition: left 0.5s ease;
+  left: -400px;
+}
+
+.header-menu span {
+  cursor: pointer;
+  margin: 40px 23px;
+}
+
+.icon-close {
+  color: white;
+}
+
+.submenu-header {
+  display: flex;
+  align-items: flex-end;
+  width: 87%;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.submenu-header img {
+  width: 23px;
+}
+
+.submenu-title {
+  margin: 0;
+}
+
+.title-recorridos {
+  color: #32C7A0;
+}
+
+.title-espacios {
+  color: #E9DC42;
+}
+
+.title-obras {
+  color: #D486B3;
+}
+
+.recorridos-line {
+  background-color: #32C7A0;
+}
+
+.chevron {
+  cursor: pointer;
+}
+
+.chevron-recorridos {
+  color: #32C7A0;
+}
+
+.chevron-espacios {
+  color: #E9DC42;
+}
+
+.chevron-obras {
+  color: #D486B3;
+}
+
+.margin-menu {
+  margin-top: 45px;
+}
+
+.espacios-line {
+  background-color: #E9DC42;
+}
+
+.obras-line {
+  background-color: #D486B3;
+}
+
+.line-top {
+  width: 132px;
+  height: 2px;
+  margin-bottom: 10px;
+  border-radius: 2%;
+}
+
+.list-menu {
+  transition: visibility 0s, opacity 0.2s linear;
+  list-style: none;
+  color: white;
+  font-size: 12px;
+  padding: 0;
+  width: 345px;
+  margin: 20px auto;
+  opacity: 1;
+  height: auto;
+  visibility: visible;
+}
+
+.close-menu {
+  opacity: 0;
+  visibility: hidden;
+  margin: 0 auto;
+  height: 0;
+  transition: visibility 0s, opacity 0.2s linear;
+}
+
+.list-menu li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.list-menu li img {
+  width: 30px;
+}
+
+.list-menu li p {
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.list-menu li i {
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.switch {
+  cursor: pointer;
+}
+
+.active-switch {
+  color: rgb(233, 220, 66);
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+}
+
+.footer img {
+  width: 140px;
+  margin-left: 24px;
+}
+
+.item-link {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 500;
+  width: 87%;
+  margin: 15px auto;
+  font-size: 15px;
+  text-decoration: none;
+  color: white;
+}
+
+/* RECORRIDOS URBANOS*/
+/*--------------------*/
+
+.imagenRecorridos {
+  text-align: left;
+  margin: auto;
+  grid-column: 1 / 3;
+  grid-row: 1 / 3;
+}
+
+#imagenRecorridos{
+  width: 95%;
+}
+
+.tituloRecorridos {
+  margin-top: 35%;
+  margin-left: -8%;
+  margin-right: -10%;
+  text-align: left;
+  font-size: 2.8rem;
+  font-weight: bold;
+  grid-column: 3 / 4;
+  grid-row: 2;
+}
+
+.hrTituloRecorridos {
+  margin-top: 68%;
+  max-width: 60%;
+  margin-left: -8%;
+  text-align: left;
+  grid-column: 3 / 4;
+  grid-row: 2;
+
+}
+.subtituloRecorridos {
+  margin-top: -2%;
+  max-height: 20px;
+  max-width: 60%;
+  font-size: 0.6rem;
+  grid-column: 1 / 4;
+  grid-row: 3;
+}
+.contenidoRecorridos {
+  text-align: left;
+  margin-top: 25px;
+  max-height: 70%;
+  font-size: 0.75rem;
+  grid-column: 1 / 4;
+  grid-row: 3 / 5;
+}
+.nombreCompletoRecorridos {
+  margin-left: -30px;
+  max-width: 20px;
+  max-height: 100%;
+  text-align: end;
+  font-size: 0.65rem;
+  font-weight: bold;
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  grid-column: 1;
+  grid-row: 1 / 5;
+}
+
+.imagenObras {
+  text-align: left;
+  margin: auto;
+  grid-column: 1 / 3;
+  grid-row: 1 / 3;
+}
+
+#imagenObras{
+  width: 100%;
+}
+
+.tituloObras {
+  margin-top: 35%;
+  margin-left: 5%;
+  text-align: left;
+  font-size: 2.8rem;
+  font-weight: bold;
+  grid-column: 3 / 4;
+  grid-row: 2;
+}
+
+.hrTituloObras {
+  margin-top: 68%;
+  margin-left: 5%;
+  max-width: 60%;
+  text-align: left;
+  grid-column: 3 / 4;
+  grid-row: 2;
+
+}
+.subtituloObras {
+  margin-top: -2%;
+  max-height: 20px;
+  max-width: 60%;
+  font-size: 0.6rem;
+  grid-column: 1 / 4;
+  grid-row: 3;
+}
+.contenidoObras {
+  text-align: left;
+  margin-top: 25px;
+  max-height: 70%;
+  font-size: 0.75rem;
+  grid-column: 1 / 4;
+  grid-row: 3 / 5;
+}
+.nombreCompletoObras {
+  margin-left: -30px;
+  max-width: 20px;
+  max-height: 100%;
+  text-align: end;
+  font-size: 0.65rem;
+  font-weight: bold;
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  grid-column: 1;
+  grid-row: 1 / 5;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 21%;
+  left: 0;
+  background-color: rgb(51, 50, 51);
+  overflow-x: hidden;
+  transition: 1s;
+  padding-top: 60px;
+}
+  
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 12px;
+  color:rgb(242, 241, 237);
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav hr {
+  margin-left: 32px;
+  margin-right: 160px;
+}
+
+.sidenav a:hover {
+  color:seashell;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+
+.sidenav .recorridos, .recorridoshr {
+  color: rgb(48, 221, 176);
+}
+
+.sidenav .espacios, .espacioshr {
+  color: rgb(253, 224, 6);
+}
+
+.sidenav .obras, .obrashr {
+  color: rgb(244, 172, 204);
+}
+
+.sidenav .general, .generalhr {
+  color: rgb(242, 241, 237);
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #00000047;
+  cursor:initial;
+}
+
+.modal-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 900px;
+  width: calc(100% - 300px);
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  justify-content: space-around;
+}
+
+.recorridos {
+  flex-direction: row;
+}
+
+.info {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  height: 450px;
+  width: 800px;
+  margin: 0 auto;
+}
+
+.info-text {
+  max-width: 180px;
+  width: 100%;
+  height: 415px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.info-text-obras {
+  margin-left: 11px;
+}
+
+.categoria-museo {
+  font-family: 'Roboto';
+  align-self: flex-start;
+  justify-self: flex-start;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  font-size: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.categoria-museo::before {
+  content: '';
+  background: url(./assets/img/iconos/fichas_general.svg);
+  width: 25px;
+  height: 25px;
+  display: block;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.imagen-container {
+  width: 500px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.imagen-recorridos {
+  width: 413px;
+  height: 600px;
+  margin: 40px;
+}
+
+.imagen-museo {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  background-position: center;
+}
+
+.autor {
+  margin: 5px 0;
+  text-align: right;
+  font-family: 'Roboto';
+  font-style: italic;
+  font-size: 10px;
+}
+
+.info img {
+  width: 60%;
+}
+
+.titulo-rosa {
+  color: #dc88a4;
+  font-size: 27px;
+  margin: 0;
+  width: 215px;
+}
+
+.titulo-verde {
+  color: #49b1ac;
+  font-size: 27px;
+  margin: 0;
+  width: 240px;
+}
+
+.titulo-amarillo {
+  color: #d8c15b;
+  font-size: 50px;
+  margin: 0;
+}
+
+.subtitulo {
+  font-size: 15px;
+}
+
+.programa-container {
+  font-size: 10px;
+  font-family: 'Roboto';
+  text-align: center;
+  width: 50px;
+}
+
+.programa {
+  margin: 10px 0 0;
+}
+
+.lugar {
+  font-weight: bold;
+  margin: 0;
+  border-top: 2px solid #C5C5C5;
+  padding: 5px 0 2px;
+}
+
+.ubicacion {
+  margin: 0;
+  border-bottom: 2px solid #C5C5C5;
+  padding: 0 0 5px;
+}
+
+.text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  width: 800px;
+  margin: 0 auto;
+}
+
+.text-recorridos {
+  width: 100%;
+  position: relative;
+}
+
+.image-text-museos {
+  width: 12px;
+  align-self: flex-start;
+  margin-right: 15px;
+}
+
+.text p {
+  text-align: justify;
+  width: 570px;
+  font-family: Roboto;
+  font-size: 12px;
+  margin: 0 0 60px;
+}
+
+.button-container {
+  width: 35%;
+  text-align: center;
+}
+
+.button-container-recorridos {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-right: 45px;
+}
+
+.button-container button {
+  margin: 0;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  background-image: url(./assets/img/iconos/boton-volver-museos.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 107px;
+  height: 34px;
+  background-color: white;
+}
+
+.button-obras button {
+  background-image: url(./assets/img/iconos/boton-volver-obras.svg);
+}
+
+.button-container-recorridos button {
+  background-image: url(./assets/img/iconos/boton-volver-recorridos.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: block;
+  width: 100px;
+  height: 35px;
+}
+
+.button-recorridos button {
+  background-image: url(./assets/img/iconos/button-recorridos.svg);
+}
+
+
+.autor-obra {
+  margin-bottom: 8px;
+  color: white;
+  background-color: black;
+  width: fit-content;
+  padding: 6px;
+  font: 10px 'Bebas Neue';
+  font-weight: bold;
+}
+
+.titulo-obras {
+  font-size: 30px;
+  color: #D486B3;
+  margin: 0;
+}
+
+.tipo-obra {
+  margin: 6px 0 0;
+  padding-bottom: 6px;
+  font: 10px 'Roboto';
+  font-weight: bold;
+  border-bottom: 2px solid #D486B3;
+  width: fit-content;
+}
+
+.caracteristicas {
+  font: 8px 'Roboto';
+  margin: 3px 0;
+}
+
+.exposicion {
+  margin-top: 10px;
+}
+
+.museo {
+  font-weight: bold;
+}
+
+.text-container-recorridos {
+  display: flex;
+  align-items: flex-start;
+  width: 350px;
+  text-align: justify;
+}
+
+.text-container-recorridos img {
+  width: 8%;
+}
+
+.text-container-recorridos p {
+  margin: 0;
+  font: 12px 'Roboto';
+}
+
+.info-recorridos {
+  height: auto;
+}
+
+.text-recorridos-center {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+}
+
+.container-titulo-recorridos {
+  width: 350px;
+  margin-left: 28px;
+  margin-bottom: 20px;
+}
+
+.titulo-recorridos {
+  color: #FDCA48;
+  margin-bottom: 0;
+  margin-left: 35px;
+  font-size: 43px;
+}
+
+.image-text-obras {
+  width: 25px;
+  align-self: flex-start;
+  margin-right: 5px;
+}
+
+.container-info-recorridos {
+  display: flex;
+}
+
+.container-info-recorridos img {
+  width: 20%;
+}
+
+.tipo-recorrido {
+  font-weight: 100;
+  border: 0;
+  font: 10px 'Roboto';
+}
+
+.image-text-recorridos {
+  width: 13px;
+  height: 100%;
+  align-self: flex-start;
+  margin-right: 5px;
+  margin-top: -5px;
+}
+
+.imagen-texto-container-rec {
+  height: fit-content;
+  display: flex;
+  margin: 0 0 60px;
+}
+
+.imagen-texto-container-rec p {
+  margin: 0;
+}
+
+.iconos-pagina-inicio {
+  position: absolute;
+  top: 40px;
+  right: 50px;
+  width: 70px;
+}
+
+.iconos-pagina-inicio img {
+  cursor: pointer;
+}
+
+.boton-info-click {
+  width: 23px;
+  height: 23px;
+  margin-right: 18px;
+}
+
+.boton-centrar {
+  width: 23px;
+  height: 23px;
+}
+
+.info-vertical {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info-vertical .text-container {
+  display: flex;
+  flex-direction: column;
+  margin: 21px;
+}
+
+.info-vertical .image-button-container {
+  margin: 21px;
+  position: relative;
+}
+
+.info-vertical .text-container .title {
+  width: 326px;
+  margin-bottom: 61px;
+}
+
+.info-vertical .text-container .text-ver {
+  width: 440px;
+  margin-bottom: 40px;
+}
+
+.imagen-texto-container-ver {
+  display: flex;
+}
+
+.imagen-texto-container-ver p {
+  margin: 0;
+  text-align: justify;
+  font: 12px 'Roboto';
+}
+
+.info-vertical .image-container {
+  width: 332px;
+  height: 465px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.container-info-recorridos-ver {
+  display: flex;
+}
+
+.container-info-recorridos-ver img {
+  width: 9%;
+}
+
+.button-container-ver {
+  text-align: end;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.button-container-ver button {
+  margin: 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100px;
+  height: 35px;
+  background-color: white;
+}
+
+.button-container-ver-recorridos button {
+  background-image: url(./assets/img/iconos/button-recorridos.svg);
+}
+
+.button-container-ver-obras button {
+  background-image: url(./assets/img/iconos/boton-volver-obras.svg);
+}
+
+.categoria-museo-ver {
+  position: relative;
+  margin-bottom: 130px;
+}
+
+.titulo-obras-ver {
+  margin: 0 0 0 35px;
+  font-size: 30px;
+  color: #D486B3;
+}
+
+.tipo-obra-ver {
+  margin-left: 35px;
+}
+
+.tipo-obra-info {
+  margin-left: 35px;
+}
+
+.programa-container-ver {
+  margin-left: 35px;
+}
+
+.categoria-recorrido {
+  top: 22px;
+  left: 22px;
+}
+
+.pop-up-home {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: fixed;
+  background-color: #060606e0;
+  display: flex;
+  z-index: 3;
+  align-items: center;
+}
+
+.pop-up-home img {
+  display: block;
+  margin: 0 auto;
+}

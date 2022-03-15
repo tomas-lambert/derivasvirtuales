@@ -1,0 +1,254 @@
+body {
+  margin: 0;
+  background-color: black;
+}
+
+header {
+  width: 100%;
+  height: 131px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.titulo {
+  position: fixed;
+  margin: 30px;
+  color: #f1f1f1;
+  display: flex;
+  letter-spacing: 1.5px;
+  z-index: 2;
+}
+
+.button-menu {
+  font-size: 25px;
+  background-color: transparent;
+  margin: 0 9px 0 0;
+  padding: 0;
+  display: block;
+  height: fit-content;
+  border: 0;
+  color: #f1f1f1;
+}
+
+.titulo-menu {
+  width: 56%;
+}
+
+.text-about {
+  color: #adadad;
+  text-align: justify;
+  font: 15px 'Roboto';
+  line-height: 16.8px;
+  margin-top: 15px;
+}
+
+.text-about:first-child {
+  margin: 0;
+}
+
+.text-about-container {
+  margin-top: 120px;
+  display: flex;
+}
+
+.about-imagen {
+  margin-right: 20px;
+  margin-left: 25px;
+  height: 120px;
+}
+
+.info-pais {
+  color: white;
+  width: 120px;
+  right: 0;
+  position: absolute;
+  text-align: center;
+  margin: 0;
+  padding: 10px 0;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  font: 15px 'Roboto';
+  font-weight: bold;
+}
+
+.section-about {
+  max-width: 1080px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.title-about {
+  font: 88px 'Bebas Neue';
+  color: #30DDB0;
+  margin: 0;
+}
+
+.container-info {
+  display: flex;
+  position: relative;
+}
+
+.inner-text {
+  position: absolute;
+  width: 520px;
+  right: -138px;
+}
+
+.out-text {
+  align-self: flex-end;
+  position: relative;
+  right: 90px;
+}
+
+.image-container img {
+  width: 460px;
+}
+
+.text-ubication-container {
+  position: relative;
+  height: 104px;
+}
+
+.text-ubication {
+  left: 36%;
+  z-index: 1;
+  top: 0;
+  transform: translate(0, 0);
+  position: absolute;
+}
+
+.creditos-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-top: 200px;
+}
+
+.creditos-imagen {
+  position: absolute;
+  margin: 0;
+  width: 190px;
+  top: -58px;
+  right: 83%;
+  height: 190px;
+}
+
+.imagen-entre-creditos {
+  margin: 20px 0 10px;
+  width: 25px;
+}
+
+.creditos-container-info {
+  display: flex;
+}
+
+.info-right {
+  margin-left: 120px;
+}
+
+.creditos-titulo {
+  font: 16px 'Roboto';
+  font-weight: bold; 
+  color: #30DDB0;
+  margin-bottom: 5px;
+}
+
+.creditos-texto {
+  color: #7d7d7d;
+  font: 15px 'Roboto';
+  width: 160px;
+  margin: 10px 0 5px;
+}
+
+.creditos-info {
+  color: white;
+  font: 15px 'Roboto';
+  margin: 3px 0 5px;
+}
+
+.subtitulo {
+  margin: 20px 0 5px;
+}
+
+.fondo-img {
+  width: 300px;
+}
+
+.ac-img {
+  width: 200px;
+}
+
+.apoyo-container {
+  display: flex;
+  align-self: flex-end;
+  margin-top: 120px;
+}
+
+.proyecto-container {
+  margin-left: 50px;
+}
+
+.apoyo-titulo {
+  margin-bottom: 25px;
+}
+
+footer {
+  margin-top: 85px;
+  margin-bottom: 20px;
+}
+
+.anchor-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.anchor {
+  display: flex;
+}
+
+.anchor img {
+  width: 25px;
+}
+
+.anchor-container p {
+  font: 15px 'Roboto';
+  color: white;
+  margin-left: 10px;
+}
+
+.section-nav {
+  height: 100vh;
+}
+
+#footer-nav {
+  max-width: 1080px;
+  margin: 85px auto 20px;
+}
+
+#body-nav {
+  background-image: url('./assets/img/mapa-de-navegacion-fondo.png');
+  background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.text-ubication-nav h1 {
+  font: 60px 'Bebas Neue';
+  color: white;
+  margin: 0;
+}
+
+.text-ubication-nav p {
+  font: 12px 'Roboto';
+  color: white;
+  font-weight: bold;
+  width: 390px;
+}
+
+#header-nav {
+  width: 100%;
+  height: 75px;
+}
