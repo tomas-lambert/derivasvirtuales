@@ -1,3 +1,5 @@
+/* MENU PRINCIPAL DESPLEGABLE ------------------------------------------------------------------------------------> */
+
 body {
   font-family: 'Bebas Neue', 'Roboto', sans-serif;
   background-color: rgb(25, 25, 25);
@@ -316,6 +318,66 @@ span {
   font-weight: normal;
   text-decoration: none;
   color: white;
+}
+
+/* FILTROS -------------------------------------------------------------------->*/
+.iconos-pagina-inicio {
+  width: 10%;
+  height: 30px;
+  position: absolute;
+  top: 40px;
+  right: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.iconos-pagina-inicio .filtros-button-container{
+  height: 100%;
+  width: 55%;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.6));
+  background: #20DCD1;
+}
+
+.iconos-pagina-inicio .filtros-button-container .filtros-button {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.iconos-pagina-inicio .filtros-button-container .filtros-button h3 {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  color: #0C0C0C;
+  text-align: center;
+}
+.iconos-pagina-inicio .boton-centrar-img-container{
+  height: 100%;
+  width: 30px;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.6));
+  background: #20DCD1;
+  border-radius: 100%;
+  align-content: center;
+}
+
+.iconos-pagina-inicio .boton-centrar-img-container .boton-centrar{
+  height: 75%;
+  width: 75%;
+
 }
 
 
@@ -845,28 +907,11 @@ span {
   margin: 0;
 }
 
-.iconos-pagina-inicio {
-  position: absolute;
-  top: 40px;
-  right: 50px;
-  width: 70px;
-}
-
-.iconos-pagina-inicio img {
-  cursor: pointer;
-}
-
 .boton-info-click {
   width: 23px;
   height: 23px;
   margin-right: 18px;
 }
-
-.boton-centrar {
-  width: 23px;
-  height: 23px;
-}
-
 .info-vertical {
   display: flex;
   justify-content: space-between;
