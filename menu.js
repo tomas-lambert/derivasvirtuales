@@ -173,6 +173,7 @@ const listRecorridos = [
 ]
 
 function createMenu() {
+  console.log("Se Creó el Menu");
   const container = document.getElementById('menu-container');
   container.classList.add('close');
   container.innerHTML += `
@@ -200,6 +201,8 @@ function createMenu() {
     </div>
   `;
 }
+
+console.log("Se leyó el codigo menu.js");
 
 function closeMenu() {
   const container = document.getElementById('menu-container');

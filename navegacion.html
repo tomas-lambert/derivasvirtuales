@@ -5,34 +5,54 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/9ae7ac6274.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" type="text/css" href="style-about-us.css">
   <title>Acerca de Derivas Virtuales</title>
 </head>
-<body id="body-nav">
-  <header id="header-nav">
-    <a class="titulo" href="./index.html">
-      <button id="menu" class="button-menu" onclick="openMenu()">&#9776;</button>
-      <div>
-        <img src="./assets/img/Logo-final-05.svg" class="titulo-menu" />
-      </div>
-    </a>
-  </header>
-  <section class="section-about section-nav">
+<body>
+  <div class="titulo">
+    <button id="menu" class="button-menu" onclick="openMenu()">&#9776;</button>
+    <div class="derivasMainLogo">
+      <img src="./assets/img/Logo-final-05.svg" class="titulo-menu" />
+    </div>
+  </div>
+  <div id="menu-container"></div>
+  <section class="section-about">
     <div class="text-ubication-nav">
-      <h1>UNA GUIA PARA NAVEGAR</h1>
-      <h1>DERIVAS VIRTUALES</h1>
-      <p>Obra en red que se constituye como un entorno virtual interactivo e invita al usuario a explorar, a modo de flâneur, obras, exposiciones, espacios de arte y recorridos sobre una cartografía imaginada.</p>
+      <h1>UNA GUIA PARA NAVEGAR <br>
+          DERIVAS VIRTUALES
+      </h1>
+      <p>Obra en red que se constituye como un <br>
+        entorno virtual interactivo e invita al usuario<br>
+        a explorar, a modo de flâneur, obras,<br>
+        exposiciones, espacios de arte y recorridos<br>
+        sobre una cartografía imaginada.
+      </p>
+      <h4>Recorre el mapa segun tu propia deriva. Descubri los <br>
+        espacios de arte que lo integran.</h4>
+      <h4>Activá las categorías curatoriales propuestas <br>
+        para navegar la cartografía. Explorá las obras y las<br>
+         exposiciones de arte.</h4>
+      <h4>Desplazate por el mapa y conocé una<br>
+         mirada sobre el paisaje mediático que rodea<br>
+        estos objetos culturales.</h4>
+    </div>
+    <div class="navegation-map">
+
     </div>
   </section>
   <footer id="footer-nav">
-    <img src="./assets/img/iconos/footer.svg" alt="border">
     <div class="anchor-container">
       <p>© 2021 DERIVAS VIRTUALES</p>
-      <a class="anchor" href="https://www.instagram.com/derivasvirtuales/">
-        <img src="./assets/img/iconos/ig-derivas.svg" alt="">
-        <p>/derivasvirtuales</p>
-      </a>
     </div>
   </footer>
+
+  <!---------------- Scripts -------------------->
+  <script src="index.js"></script>
+  <script src="menu.js"></script>
+  <script src="info-edificios.js"></script>
+  <script type="module">
+    createMenu()
+  </script>
 </body>
 </html>
