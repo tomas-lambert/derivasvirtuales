@@ -370,6 +370,24 @@ span {
 footer {
   height: 10vh;
 }
+/* ABOUT US ---------------------------------------------> */
+.section-aboutUs{
+  height: 200vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.SA-text-ubication-container{
+  display: flex;
+  flex-direction: row;
+}
+
+.SA-main-container{
+  display: flex;
+  flex-direction: row;
+}
+
+
 .anchor-container p {
   font: 1.25vh 'Roboto';
   color: white;

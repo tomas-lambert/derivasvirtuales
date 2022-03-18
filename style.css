@@ -1,6 +1,7 @@
 /* MENU PRINCIPAL DESPLEGABLE ------------------------------------------------------------------------------------> */
 
 body {
+  height: 100vh;
   font-family: 'Bebas Neue', 'Roboto', sans-serif;
   background-color: rgb(25, 25, 25);
   margin: 0;

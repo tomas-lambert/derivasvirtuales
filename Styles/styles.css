@@ -373,4 +373,101 @@ span {
   text-decoration: none;
   color: white;
 }
+
+.section-aboutUs {
+  height: 200vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.section-aboutUs .title-container {
+  height: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.section-aboutUs .title-container .title-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.section-aboutUs .title-container .title-box .title-about {
+  font: 88px 'Bebas Neue';
+  color: #30DDB0;
+  margin: 0;
+}
+
+.section-aboutUs .title-container .info-pais {
+  color: white;
+  width: 120px;
+  right: 0;
+  position: absolute;
+  text-align: center;
+  margin: 0;
+  padding: 10px 0;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  font: 15px 'Roboto';
+  font-weight: bold;
+}
+
+.section-aboutUs .SA-main-container {
+  height: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.section-aboutUs .SA-main-container .imgNcredits-container {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.section-aboutUs .SA-main-container .imgNcredits-container .img-container {
+  height: 30%;
+}
+
+.section-aboutUs .SA-main-container .imgNcredits-container .img-container img {
+  width: 460px;
+}
+
+.section-aboutUs .SA-main-container .imgNcredits-container .creditos-container {
+  height: 70%;
+}
+
+.section-aboutUs .SA-main-container .info-container {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
 /*# sourceMappingURL=styles.css.map */
