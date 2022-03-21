@@ -502,28 +502,17 @@ footer {
 }
 
 .creditos-titulo {
-  font: 16px 'Roboto';
-  font-weight: bold; 
-  color: #30DDB0;
-  margin-bottom: 5px;
+  
 }
 
 .creditos-texto {
-  color: #7d7d7d;
-  font: 15px 'Roboto';
-  width: 160px;
-  margin: 10px 0 5px;
-}
+  
 
 .creditos-info {
-  color: white;
-  font: 15px 'Roboto';
-  margin: 3px 0 5px;
+  
 }
 
-.subtitulo {
-  margin: 20px 0 5px;
-}
+
 
 .fondo-img {
   width: 300px;
@@ -544,7 +533,7 @@ footer {
 }
 
 .apoyo-titulo {
-  margin-bottom: 25px;
+  
 }
 
 
