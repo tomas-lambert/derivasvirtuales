@@ -81,7 +81,7 @@ const listObras = [
   },
   {
     template: `
-      <p>Libros de artista y múltiples</p>
+      <p>Libros de artista</p>
       <img id="múltiples" src="./assets/img/iconos/apagado.svg" />
     `,
     visible: false,
@@ -204,6 +204,37 @@ function createMenu() {
 
 console.log("Se leyó el codigo menu.js");
 
+
+
+function centrarMapa() {
+  setCamera = true;
+}
+// Pop- Up   open and close ------------------------------------>
+function closePopUp() {
+  const popUp = document.getElementById('popUp');
+  if(popUp.classList.contains('open-popUp')) {
+    popUp.classList.remove('open-popUp');
+    popUp.classList.add('close-popUp');
+  }
+}
+
+function openPopUp() {
+  const popUp = document.getElementById('popUp');
+  if(popUp.classList.contains('close-popUp')) {
+    popUp.classList.remove('close-popUp');
+    popUp.classList.add('open-popUp');
+  }
+}
+
+// Menu Principal   open and close ------------------------------------>
+function openMenu() {
+  const container = document.getElementById('menu-container');
+  const button = document.getElementById('menu');
+  button.classList.add('close-button');
+  container.classList.add('open');
+  container.classList.remove('close');
+}
+
 function closeMenu() {
   const container = document.getElementById('menu-container');
   const button = document.getElementById('menu');
@@ -212,22 +243,6 @@ function closeMenu() {
     container.classList.remove('open');
     container.classList.add('close');
   }
-}
-
-function centrarMapa() {
-  setCamera = true;
-}
-
-function closePopUp() {
-  document.getElementById('popUp').remove();
-}
-
-function openMenu() {
-  const container = document.getElementById('menu-container');
-  const button = document.getElementById('menu');
-  button.classList.add('close-button');
-  container.classList.add('open');
-  container.classList.remove('close');
 }
 
 function handleSubMenu(menuNombre) {
@@ -244,6 +259,70 @@ function handleSubMenu(menuNombre) {
   } else {
     menu.classList.add('close-menu');
   };
+}
+
+//Filtros  ------------------------------------------------------------------>
+
+function createSubmenuFiltros() {
+  console.log("Se Creó el Menu de Filtros");
+  const menuFiltros = document.getElementById('menu-de-filtros');
+  menuFiltros.innerHTML += `
+    <div class="close-button-filtros">
+      <img src="./assets/img/iconos/Filtros-Cerrar.svg" onclick="closeFiltros()"/>
+    </div>
+    <div class="filtros-input-container">
+      <div class="recorridos-container">
+        <p class="title-recorridos">RECORRIDOS URBANOS</p>
+        <div class="recorridos-input-container">
+          <ul class="list-menu-inputs" id="recorridos">
+            ${listRecorridos.map(item => `
+            <li onclick="onSwitch('${item.type}', 'verde')" class="switch">
+            ${item.template}
+            </li>`).join('')}
+          </ul>
+        </div>
+      </div>
+      <div class="recorridos-container">
+        <p class="title-recorridos">ESPACIOS DE ARTE</p>
+        <div class="recorridos-input-container">
+          <ul class="list-menu-inputs" id="espacios">
+            ${listEspacios.map(item => `
+            <li onclick="onSwitch('${item.type}', 'amarillo')" class="switch">
+              ${item.template}
+            </li>`).join('')}
+          </ul>
+        </div>
+      </div>
+      <div class="recorridos-container">
+        <p class="title-recorridos">OBRAS Y EXPOSICIONES</p>
+        <div class="recorridos-input-container">
+          <ul class="list-menu-inputs" id="espacios">
+          ${listObras.map(item => `
+            <li onclick="onSwitch('${item.type}', 'rosa')" class="switch">
+              ${item.template}
+            </li>`).join('')}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  `;
+}
+
+function openFiltros(){
+  const menuFiltros = document.getElementById('menu-de-filtros');
+  if(menuFiltros.classList.contains('close-filtros')){
+    menuFiltros.classList.remove('close-filtros');
+    menuFiltros.classList.add('open-filtros');
+  }
+}
+
+function closeFiltros(){
+  const menuFiltros = document.getElementById('menu-de-filtros');
+  if(menuFiltros.classList.contains('open-filtros')){
+    menuFiltros.classList.remove('open-filtros');
+    menuFiltros.classList.add('close-filtros');
+  }
 }
 
 function onSwitch(type, color) {

@@ -14,12 +14,12 @@
   <body>
     <div class="titulo">
       <button id="menu" class="button-menu" onclick="openMenu()">&#9776;</button>
-      <a href="./index.html" class="derivasMainLogo">
+      <div class="derivasMainLogo">
         <img src="./assets/img/Logo-final-05.svg" class="titulo-menu" />
-      </a> 
+      </div>
     </div>
     <div id="menu-container"></div>
-    <div class="pop-up-home" onclick="closePopUp()" id="popUp">
+    <div class="pop-up-home open-popUp" onclick="closePopUp()" id="popUp">
       <div class="pop-up-ficture">
         <h3 class="pop-up-title">Cómo navegar este mapa</h3>
         <ul>
@@ -39,6 +39,9 @@
           Recomendamos interactuar con esta plataforma desde un ordenador para una mejor experiencia
         </p>
       </div>
+    </div>
+    <div class="pop-up-button-open"  onclick="openPopUp()" >
+      <img src="assets/img/iconos/pop-up-button.svg" alt="Ayuda">
     </div>
     <script src="index.js"></script>
     <script src="menu.js"></script>
@@ -61,6 +64,7 @@
 
       function init() {
         createMenu();
+        createSubmenuFiltros();
 
         scene = new THREE.Scene();
         scene.background = new THREE.Color( 0x000000 );
@@ -250,7 +254,7 @@
       }
     </script>
     <div class="iconos-pagina-inicio">
-      <div class="filtros-button-container">
+      <div class="filtros-button-container"  id="filtros-button" onclick="openFiltros()">
         <div class="filtros-button">
           <h3>Filtros</h3>
         </div>
@@ -258,6 +262,8 @@
       <div class="boton-centrar-img-container">
         <img src="./assets/img/iconos/centrar-mapa-black.svg" class="boton-centrar" onclick="centrarMapa()"/>
       </div>
+    </div>
+    <div class="filtros-desplegable-container close-filtros" id="menu-de-filtros">
     </div>
   </body>
 </html>
