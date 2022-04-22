@@ -1,6 +1,6 @@
 {
     "asset" : {
-        "generator" : "Khronos glTF Blender I/O v1.3.48",
+        "generator" : "Khronos glTF Blender I/O v1.7.33",
         "version" : "2.0"
     },
     "scene" : 0,
@@ -34,6 +34,22 @@
             ]
         }
     ],
+    "materials" : [
+        {
+            "doubleSided" : true,
+            "name" : "EXPO Y OBRAS",
+            "pbrMetallicRoughness" : {
+                "baseColorFactor" : [
+                    0.9734455347061157,
+                    0.1912016123533249,
+                    0.6795425415039062,
+                    1
+                ],
+                "metallicFactor" : 0,
+                "roughnessFactor" : 0.5
+            }
+        }
+    ],
     "meshes" : [
         {
             "name" : "C\u00edrculo.014",
@@ -44,7 +60,8 @@
                         "NORMAL" : 1,
                         "TEXCOORD_0" : 2
                     },
-                    "indices" : 3
+                    "indices" : 3,
+                    "material" : 0
                 }
             ]
         }
@@ -110,7 +127,7 @@
     "buffers" : [
         {
             "byteLength" : 540,
-            "uri" : "data:application/octet-stream;base64,AAAAAAAAAAAAAIC/2LNdPwAAAAD9//8+2LNdPwAAAAD9//8+AAAAAAAAAAAAAIC/17NdvwAAAAABAAA/17NdvwAAAAABAAA/AAAAAAAAAAAAAIC/2LNdPwAAAAD9//8+q6qqMtrcsD8AAICy2LNdPwAAAAD9//8+17NdvwAAAAABAAA/q6qqMtrcsD8AAICy17NdvwAAAAABAAA/AAAAAAAAAAAAAIC/q6qqMtrcsD8AAICyAAAAAAAAgD8AAACAAAAAAAAAgD8AAACAAAAAAAAAgD8AAACAAAAAAAAAgD8AAACAAAAAAAAAgD8AAACAAAAAAAAAgD8AAACAGnlQv883rr5WufA+GnlQv883rr5WufA+GnlQv883rr5WufA+aytJs9A3rr5VuXC/aytJs9A3rr5VuXC/aytJs9A3rr5VuXC/GnlQP843rr5TufA+GnlQP843rr5TufA+GnlQP843rr5TufA+AAAAAAAAgD8AAAAAAACAPwAAAAAAAIA/AAAAAAAAgD8AAAAAAACAPwAAAAAAAIA/AAAAAAAAgD8AAAAAAACAPwAAAAAAAIA/AAAAAAAAgD8AAAAAAACAPwAAAAAAAIA/AAAAAAAAgD8AAAAAAACAPwAAAAAAAIA/AAABAAIAAAACAAMAAQAEAAUAAQAFAAIABAAAAAMABAADAAUABgAHAAgACQAKAAsADAANAA4ABQACAAMA"
+            "uri" : "data:application/octet-stream;base64,AAAAAAAAAAAAAIC/17NdvwAAAAABAAA/2LNdPwAAAAD9//8+AAAAAAAAAAAAAIC/AAAAAAAAAAAAAIC/AAAAAAAAAAAAAIC/17NdvwAAAAABAAA/17NdvwAAAAABAAA/17NdvwAAAAABAAA/2LNdPwAAAAD9//8+2LNdPwAAAAD9//8+2LNdPwAAAAD9//8+q6qqMtrcsD8AAICyq6qqMtrcsD8AAICyq6qqMtrcsD8AAICyAAAAAAAAgD8AAACAAAAAAAAAgD8AAACAAAAAAAAAgD8AAACAGnlQv883rr5WufA+AAAAAAAAgD8AAACAGnlQP843rr5TufA+aytJs9A3rr5VuXC/AAAAAAAAgD8AAACAGnlQP843rr5TufA+GnlQv883rr5WufA+aytJs9A3rr5VuXC/AAAAAAAAgD8AAACAGnlQv883rr5WufA+aytJs9A3rr5VuXC/GnlQP843rr5TufA+AAAAAAAAgD8AAAAAAACAPwAAAAAAAIA/AAAAAAAAgD8AAAAAAACAPwAAAAAAAIA/AAAAAAAAgD8AAAAAAACAPwAAAAAAAIA/AAAAAAAAgD8AAAAAAACAPwAAAAAAAIA/AAAAAAAAgD8AAAAAAACAPwAAAAAAAIA/AAACAAsAAAALAAQAAgABAAcAAgAHAAsAAQAAAAQAAQAEAAcAAwAJAAwACgAGAA0ACAAFAA4ABwALAAQA"
         }
     ]
 }

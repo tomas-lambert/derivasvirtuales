@@ -168,7 +168,6 @@
 
         window.addEventListener( 'resize', onWindowResize );
       }
-
       function raycast (event) {
         mouse.x = ( event.clientX / window.innerWidth ) * 2 - 1;
         mouse.y = - ( event.clientY / window.innerHeight ) * 2 + 1;
@@ -229,6 +228,8 @@
         renderer.setSize( window.innerWidth, window.innerHeight );
       }
 
+      
+
       function animate() {
         requestAnimationFrame( animate );
         controls.update();
@@ -250,12 +251,14 @@
             }
           })
         })
+
+            
         renderer.render( scene, camera );
       }
     </script>
     <div class="iconos-pagina-inicio">
       <div class="filtros-button-container"  id="filtros-button" onclick="openFiltros()">
-        <div class="filtros-button">
+        <div class="filtros-button" id="filtrosButtonContainer">
           <h3>Filtros</h3>
         </div>
       </div>

@@ -272,7 +272,7 @@ function createSubmenuFiltros() {
     </div>
     <div class="filtros-input-container">
       <div class="recorridos-container">
-        <p class="title-recorridos">RECORRIDOS URBANOS</p>
+        <p class="title-recorridos recorridos-urbanos">RECORRIDOS URBANOS</p>
         <div class="recorridos-input-container">
           <ul class="list-menu-inputs" id="recorridos">
             ${listRecorridos.map(item => `
@@ -283,7 +283,7 @@ function createSubmenuFiltros() {
         </div>
       </div>
       <div class="recorridos-container">
-        <p class="title-recorridos">ESPACIOS DE ARTE</p>
+        <p class="title-recorridos espacios-de-arte">ESPACIOS DE ARTE</p>
         <div class="recorridos-input-container">
           <ul class="list-menu-inputs" id="espacios">
             ${listEspacios.map(item => `
@@ -294,7 +294,7 @@ function createSubmenuFiltros() {
         </div>
       </div>
       <div class="recorridos-container">
-        <p class="title-recorridos">OBRAS Y EXPOSICIONES</p>
+        <p class="title-recorridos obras-exposiciones">OBRAS Y EXPOSICIONES</p>
         <div class="recorridos-input-container">
           <ul class="list-menu-inputs" id="espacios">
           ${listObras.map(item => `
@@ -304,16 +304,26 @@ function createSubmenuFiltros() {
           </ul>
         </div>
       </div>
+      <div class="recorridos-clearButton">
+      <h3>Deseleccionar todo</h3>
+      </div>
     </div>
   </div>
   `;
 }
+
 
 function openFiltros(){
   const menuFiltros = document.getElementById('menu-de-filtros');
   if(menuFiltros.classList.contains('close-filtros')){
     menuFiltros.classList.remove('close-filtros');
     menuFiltros.classList.add('open-filtros');
+  }
+  const filtrosButton = document.getElementById('filtrosButtonContainer');
+  if(filtrosButton.classList.contains('hoverConst')){
+    filtrosButton.classList.remove('hoverConst');
+  }else{
+    filtrosButton.classList.add('hoverConst');
   }
 }
 
@@ -322,6 +332,12 @@ function closeFiltros(){
   if(menuFiltros.classList.contains('open-filtros')){
     menuFiltros.classList.remove('open-filtros');
     menuFiltros.classList.add('close-filtros');
+  }
+  const filtrosButton = document.getElementById('filtrosButtonContainer');
+  if(filtrosButton.classList.contains('hoverConst')){
+    filtrosButton.classList.remove('hoverConst');
+  }else{
+    filtrosButton.classList.add('hoverConst');
   }
 }
 
